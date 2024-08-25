@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup>
 import { ref } from 'vue';
 import { operations } from './useMathOperations';
 import OperationButton from './OperationButton.vue';
@@ -11,7 +11,7 @@ const handleOperation = (operationFunc) => {
 };
 </script>
 <template>
-    <div class="max-w-md mx-auto mt-10">
+    <div class="max-w-md mx-auto mt-10 pt-12">
       <div class="grid grid-cols-2 gap-x-4">
         <input
           type="number"
@@ -37,4 +37,4 @@ const handleOperation = (operationFunc) => {
       </div>
     </div>
   </template>
-
+  

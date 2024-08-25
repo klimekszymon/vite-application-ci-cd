@@ -1,6 +1,6 @@
 import { ref, onMounted } from 'vue';
 import axios from 'axios';
-import { Country } from '../types'; // Assume you have a types.ts file for TypeScript interfaces
+import type{ Country } from './types'; // Assume you have a types.ts file for TypeScript interfaces
 
 export function useFetchCountries() {
   const countries = ref<Country[]>([]);

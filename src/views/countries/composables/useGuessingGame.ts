@@ -1,6 +1,7 @@
 // useGuessingGame.ts
-import { ref, Ref } from 'vue';
-import { Country } from '../types'; // Assuming this path is correct
+import { ref } from 'vue';
+import type {Ref} from 'vue';
+import type { Country } from './types'; // Assuming this path is correct
 
 export function useGuessingGame(countries: Ref<Country[]>) {
   const currentGuessCountry = ref<Country | null>(null);
@@ -35,3 +36,4 @@ export function useGuessingGame(countries: Ref<Country[]>) {
 
   return { currentGuessCountry, userGuess, guessFeedback, selectRandomCountry, checkGuess, nextGuess };
 }
+

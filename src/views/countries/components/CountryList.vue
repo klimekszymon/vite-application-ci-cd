@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import CountryItem from './CountryItem.vue';
-import { Country } from '../types';
+import { Country } from '../composables/types';
 
 // Define props with nightMode
 defineProps<{

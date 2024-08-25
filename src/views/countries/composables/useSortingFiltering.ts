@@ -1,5 +1,6 @@
-import { ref, computed, Ref } from 'vue';
-import { Country } from '../types';
+import { ref, computed} from 'vue';
+import type { Ref } from 'vue';
+import type { Country } from './types';
 
 export function useSortingFiltering(countries: Ref<Country[]>) {
   const searchQuery = ref('');
@@ -7,7 +8,7 @@ export function useSortingFiltering(countries: Ref<Country[]>) {
 
   const filteredCountries = computed(() => {
     let sorted = [...countries.value];
-    
+
     // Sorting logic
     if (sortOption.value === 'name') {
       sorted.sort((a, b) => a.name.localeCompare(b.name));

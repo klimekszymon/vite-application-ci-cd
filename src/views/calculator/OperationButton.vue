@@ -1,11 +1,11 @@
-<script setup lang="ts">
+  <script setup>
   import { defineProps, defineEmits } from 'vue';
-
+  
   const props = defineProps({
     operation: Object,
   });
   const emit = defineEmits(['execute'])
-
+  
   const executeOperation = () => {
     emit('execute', props.operation.function);
   };
@@ -20,3 +20,4 @@
       {{ operation.symbol }}
     </button>
   </template>
+  
