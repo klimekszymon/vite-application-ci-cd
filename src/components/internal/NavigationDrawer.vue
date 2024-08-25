@@ -12,6 +12,7 @@ const allLinks = [
   // ["Bezpieczna komunikacja z API", "/exercises/1-end"],
   ['App: Kalkulator', '/calculator/app-calculator', true],
   ['App: Zgadnij Flagę', '/countries/app-country-flags', true],
+  ['Biblioteka Testów', '/library', true],
 ];
 
 const route = useRoute();
